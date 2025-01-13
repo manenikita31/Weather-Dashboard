@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class= "app-title">Your Weather Globe </h1>
+        </header>
+        <main>
+            <div class = "search">
+                <input type="text" id="city-input" placeholder="Enter city name">
+                <div id="suggestions" class="suggestions-box"></div>
+                <button id="search-button">Get Weather</button>
+            </div>
+            <div class="date-container">
+                <p id="current-date" class="current-date"></p>
+            </div>
+            <div id= "weather-display" class="weather-display">
+                
+            </div>
+        </main>
+    </div>
+        <footer>
+            <p>© 2025 WeatherApp. Designed with ❤️ by Nikita</p>
+        </footer>        
+    <script src="/js/scripts.js"></script>
+</body>
+</html>
