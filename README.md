@@ -1,6 +1,7 @@
 # Weather Dashboard
 
-A dynamic and visually appealing weather dashboard that allows users to search for real-time weather information by city name. The application dynamically updates the background, and provides a user-friendly interface.
+## Project Overview
+The Weather Dashboard is a responsive single-page application (SPA) that allows users to search for current weather information by city name. The application dynamically fetches weather data using the OpenWeatherMap API and displays it in an attractive, user-friendly interface
 
 ---
 
@@ -36,19 +37,22 @@ A dynamic and visually appealing weather dashboard that allows users to search f
    http://localhost:3000
 
 ## API Documentation
-- API Endpoint: /api/weather
-- Request Parameters:
-- city (string): Name of the city to fetch weather data for.
-- Error response:
-  ```json
-  {
-  "error": "City not found or invalid API key."
-  }
+### Weather Data API
+The application integrates with the OpenWeatherMap API to fetch weather details.
+
+#### Endpoint
+
+ GET /weather?city={city-name}
+
+#### Parameters:
+1. city = City name (ex. London)
+2. appid = OpenWeatherMap API key
 
 ## Design Decisions
 1. Dynamic Backgrounds: Background images change based on weather conditions for an immersive user experience.
 2. User-Friendly Storage: Browser-side storage ensures that users can revisit their previously searched cities.
 3. Modern Aesthetics: Gradient backgrounds that adapt to weather conditions.
+4. Performance: API calls are cached locally for frequently searched cities. Lightweight animations ensure smooth performance
 
 ## Future Improvements
 1. 5-Day Weather Forecast:
@@ -76,10 +80,16 @@ A dynamic and visually appealing weather dashboard that allows users to search f
 
 ## Visual Demo
 - After starting the server:
- https://github.com/manenikita31/Weather-Dashboard/blob/main/public/images/Screenshot%20(87).png
+ ![display](https://github.com/manenikita31/Weather-Dashboard/blob/main/public/images/Screenshot%20(87).png)
 
 - Weather information:
-  
+ ![display](https://github.com/manenikita31/Weather-Dashboard/blob/main/public/images/Screenshot%20(88).png)
+
+- Previously searched cities display:
+ ![display](https://github.com/manenikita31/Weather-Dashboard/blob/main/public/images/Screenshot%20(90).png)
+
+- Dynamically changed background according to condition:
+ ![display](https://github.com/manenikita31/Weather-Dashboard/blob/main/public/images/Screenshot%20(89).png)
   
 
 
