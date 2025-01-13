@@ -35,4 +35,49 @@ A dynamic and visually appealing weather dashboard that allows users to search f
 6. Open your browser and navigate to:
    http://localhost:3000
 
+## API Documentation
+- API Endpoint: /api/weather
+- Request Parameters:
+- city (string): Name of the city to fetch weather data for.
+- Error response:
+  ```json
+  {
+  "error": "City not found or invalid API key."
+  }
+
+## Design Decisions
+1. Dynamic Backgrounds: Background images change based on weather conditions for an immersive user experience.
+2. User-Friendly Storage: Browser-side storage ensures that users can revisit their previously searched cities.
+3. Modern Aesthetics: Gradient backgrounds that adapt to weather conditions.
+
+## Future Improvements
+1. 5-Day Weather Forecast:
+   - Extend functionality to display a 5-day forecast for the selected city.
+2. Localization:
+   - Support for multiple languages.
+3. Improved Animations:
+   - Use advanced Lottie animations for weather icons.
+4. Dark Mode:
+   - Add support for a dark mode theme.
+5. Search Suggestions:
+   - Auto-suggest cities while typing in the search bar.
+6. User Authentication:
+   - Allow users to save favorite cities with personalized dashboards.
+
+## Notes About Platform Limitations
+1. API Rate Limits:
+- The free tier of the OpenWeatherMap API allows only a limited number of calls per minute. Ensure caching and limit requests to avoid hitting the cap.
+
+2. Cold Starts (Replit Deployment):
+- If deployed on Replit, the backend server may experience delays when waking up after inactivity.
+
+3. Browser Storage Limits:
+- localStorage has a storage limit of 5MB, which should suffice for storing a list of previously searched cities
+
+## Visual Demo
+- After starting the server:
+
+  
+
+
 
