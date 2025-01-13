@@ -76,7 +76,9 @@ A dynamic and visually appealing weather dashboard that allows users to search f
 
 ## Visual Demo
 - After starting the server:
+ https://github.com/manenikita31/Weather-Dashboard/blob/main/public/images/Screenshot%20(87).png
 
+- Weather information:
   
 
 
