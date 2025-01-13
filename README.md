@@ -80,6 +80,7 @@ A dynamic and visually appealing weather dashboard that allows users to search f
 
 - Weather information:
   
+  
 
 
 
